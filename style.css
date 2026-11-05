@@ -2,6 +2,7 @@
 :root{--primary:#5145e5;--ink:#172033;--muted:#657084;--line:#e3e8f0;--soft:#f4f6fb}
 *{box-sizing:border-box;margin:0;padding:0}
 html{scroll-behavior:smooth}
+section[id]{scroll-margin-top:85px}
 body{font-family:Segoe UI,Arial,sans-serif;color:var(--ink);line-height:1.65}
 a{text-decoration:none;color:inherit}
 .container{width:min(1100px,92%);margin:auto}
@@ -54,3 +55,4 @@ tbody tr:hover{background:#f8f9ff}
 footer{background:#0e1424;color:#cbd2e1;padding:20px 0;text-align:center;font-size:.9rem}
 @media(max-width:850px){.hero-grid{grid-template-columns:1fr}.four{grid-template-columns:repeat(2,1fr)}.three{grid-template-columns:repeat(2,1fr)}.nav{flex-direction:column;padding:14px 0}}
 @media(max-width:560px){.four,.three{grid-template-columns:1fr}.nav{align-items:flex-start}nav{gap:10px}nav a{font-size:.82rem}.hero{padding:50px 0}.section{padding:50px 0}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.card,.project{transition:none}}
