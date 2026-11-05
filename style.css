@@ -1,0 +1,56 @@
+/* FIT4014 Portfolio V8 - CSS thuần */
+:root{--primary:#5145e5;--ink:#172033;--muted:#657084;--line:#e3e8f0;--soft:#f4f6fb}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:Segoe UI,Arial,sans-serif;color:var(--ink);line-height:1.65}
+a{text-decoration:none;color:inherit}
+.container{width:min(1100px,92%);margin:auto}
+header{position:sticky;top:0;z-index:10;background:#fff;border-bottom:1px solid var(--line)}
+.nav{min-height:70px;display:flex;align-items:center;justify-content:space-between;gap:20px}
+.logo{font-weight:900;color:var(--primary);letter-spacing:.04em}
+nav{display:flex;gap:18px;flex-wrap:wrap}
+nav a{font-size:.9rem;font-weight:600;color:var(--muted)}
+nav a:hover,nav a:focus-visible{color:var(--primary)}
+a:focus-visible{outline:3px solid #a5b4fc;outline-offset:3px}
+.hero{padding:75px 0;background:linear-gradient(135deg,#f0f2ff,#fff)}
+.hero-grid{display:grid;grid-template-columns:1.5fr .8fr;gap:45px;align-items:center}
+.eyebrow{color:var(--primary);font-weight:800;font-size:.78rem;letter-spacing:.12em;margin-bottom:10px}
+h1{font-size:clamp(2.2rem,5vw,4rem);line-height:1.15;margin-bottom:18px}
+h1 span{color:var(--primary)}
+.lead{color:var(--muted);max-width:620px;margin-bottom:25px}
+.button{display:inline-block;background:var(--primary);color:white;padding:11px 22px;border-radius:30px;font-weight:700}
+.button:hover{background:#3730a3}
+.profile,.panel,.card,.project{background:white;border:1px solid var(--line);border-radius:18px;padding:25px;box-shadow:0 8px 25px #1720330a}
+.profile{text-align:center}
+.avatar{width:100px;height:100px;border-radius:50%;display:block;object-fit:cover;object-position:center 30%;margin:0 auto 15px;background:#e7eaff}
+.profile h2{font-size:1.35rem}
+.profile p{color:var(--muted);margin:5px}
+.profile hr{border:0;border-top:1px solid var(--line);margin:15px 0}
+.section{padding:70px 0}
+.section h2{font-size:clamp(1.8rem,3vw,2.5rem);margin-bottom:25px}
+.tinted{background:var(--soft)}
+.panel p{margin:0 0 12px;color:var(--muted)}
+.panel p:last-child{margin-bottom:0}
+.grid{display:grid;gap:18px}
+.four{grid-template-columns:repeat(4,1fr)}
+.three{grid-template-columns:repeat(3,1fr)}
+.card h3{color:var(--primary);margin-bottom:8px}
+.card p,.project p{color:var(--muted);font-size:.94rem}
+.card,.project{transition:transform .2s,box-shadow .2s}
+.card:hover,.project:hover{transform:translateY(-4px);box-shadow:0 12px 28px #17203312}
+.project-number{font-size:2rem;font-weight:900;color:var(--primary);margin-bottom:10px}
+.note{color:var(--muted);margin:-12px 0 20px}
+.table-wrap{overflow-x:auto;border:1px solid var(--line);border-radius:14px;background:white}
+table{border-collapse:collapse;width:100%;min-width:620px}
+th,td{padding:14px 16px;text-align:left;border-bottom:1px solid var(--line)}
+th{background:#e8eaff;color:var(--ink)}
+tbody tr:last-child td{border-bottom:0}
+tbody tr:hover{background:#f8f9ff}
+.contact{background:#172033;color:white}
+.contact h2{color:white}
+.contact .eyebrow{color:#a5b4fc}
+.contact p{margin:8px 0;color:#d4d9e6}
+.contact a{color:#a5b4fc;text-decoration:underline}
+footer{background:#0e1424;color:#cbd2e1;padding:20px 0;text-align:center;font-size:.9rem}
+@media(max-width:850px){.hero-grid{grid-template-columns:1fr}.four{grid-template-columns:repeat(2,1fr)}.three{grid-template-columns:repeat(2,1fr)}.nav{flex-direction:column;padding:14px 0}}
+@media(max-width:560px){.four,.three{grid-template-columns:1fr}.nav{align-items:flex-start}nav{gap:10px}nav a{font-size:.82rem}.hero{padding:50px 0}.section{padding:50px 0}}
